@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    *,::after,::before {
+        box-sizing: border-box;
+        border: 1px solid red;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0 0 theme(height.header-height) 0;
+        padding: 0;
+        font-family: Poppins;
+        font-size: theme(fontSize.normal-font);
+        color: theme(colors.color-text);
+    }
+    
+    h1,h2,h3,ul,p {
+        margin: 0;
+    }
+
+    h1,h2,h3 {
+        color: theme(colors.title-color);
+        font-weight: theme(fontWeight.medium);
+    }
+    
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .section {
+        padding: 1.5rem 0;
+    }
+    
+    .section-title {
+        font-size: theme(fontSize.h2);
+        color: theme(colors.title-color);
+        font-weight: theme(fontWeight.semi-bold);
+        text-transform: uppercase;
+        letter-spacing: .35rem;
+        text-align: center;
+        margin-bottom: theme(margin[1.5]);
+    }
+}
+
