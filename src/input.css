@@ -112,6 +112,21 @@
     margin-right: .25rem;
 }
 
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: theme(fontSize.small-font);
+    color: theme(colors.color-text);
+}
+.social-link:hover {
+    color: theme(colors.title-color);
+}
+
+.social-link {
+    font-size: 1.2rem;
+    margin-right: .25rem;
+}
+
 
 @media (max-width: 968px) {
     .nav-menu {
