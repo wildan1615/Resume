@@ -7,12 +7,44 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Box Icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
     <title>Resume CV</title>
 </head>
 <body>
     <!--========== HEADER ==========-->
-    <header class="l-header" id="header">
-            
+    <header class="w-full fixed bottom-0 left-0 z-fixed bg-body-color shadow-title-color duration-300" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav-logo">Wildan</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="grid grid-cols-3 gap-8">
+                    <li class="text-center">
+                        <a href="#home" class="nav-link"><i class='bx bx-home nav-icon'></i>Home</a>
+                    </li>
+                    <li class="text-center">
+                        <a href="#profile" class="nav-link"><i class='bx bx-user nav-icon'></i>Profile</a>
+                    </li>
+                    <li class="text-center">
+                        <a href="#education" class="nav-link"><i class='bx bx-book nav-icon'></i>Education</a>
+                    </li>
+                    <li class="text-center">
+                        <a href="#skills" class="nav-link"><i class='bx bx-receipt nav-icon'></i>Skills</a>
+                    </li>
+                    <li class="text-center">
+                        <a href="#eksperience" class="nav-link"><i class='bx bx-briefcase nav-icon'></i>Eksperience</a>
+                    </li>
+                    <li class="text-center">
+                        <a href="#certificates" class="nav-link"><i class='bx bx-award nav-icon'></i>Certificates</a>
+                    </li>
+                    <li class="text-center">
+                        <a href="#references" class="nav-link"><i class='bx bx-link-external nav-icon'></i>References</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-toggle cursor-pointer" id="nav-toggle">
+                <i class='bx bx-grid-alt nav-icon'></i>
+            </div>
+        </nav>
     </header>
     <main class="l-main bd-container">
         <!-- All elements within this div, is generated in PDF -->
@@ -79,5 +111,7 @@
             </div>
         </div>        
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
