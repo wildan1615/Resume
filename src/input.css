@@ -101,6 +101,17 @@
     color: theme(colors.title-color);
 }
 
+.home-information {
+    display: flex;
+    align-items: center;
+    font-size: theme(fontSize.small-font);
+}
+
+.home-icon {
+    font-size: 1.2rem;
+    margin-right: .25rem;
+}
+
 
 @media (max-width: 968px) {
     .nav-menu {
