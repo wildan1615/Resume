@@ -11,16 +11,9 @@ module.exports = {
       'body-color': '#FCFCFC'
     },
     fontSize: {
-      'h1': '1.5rem',
-      'h2': '1.25rem',
-      'h3': '1rem',
       'normal-font': '.938rem',
       'small-font': '.875rem',
       'smaller-font': '.813rem'
-    },
-    fontWeight: {
-      'medium': 500,
-      'semi-bold': 600
     },
     fontFamily: {
       poppins: ['Poppins', 'sans-serif']
@@ -33,6 +26,9 @@ module.exports = {
     zIndex: {
       'tooltip': '10',
       'fixed': '100'
+    },
+    screens: {
+      'tablet': '640',
     },
     extend: {
       height: {

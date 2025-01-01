@@ -7,30 +7,91 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Box Icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
     <title>Resume CV</title>
 </head>
 <body>
     <!--========== HEADER ==========-->
-    <header class="l-header" id="header">
-            
+    <header class="w-full fixed bottom-0 left-0 z-fixed bg-body-color shadow-title-color duration-300" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav-logo">Wildan</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="grid grid-cols-3 gap-8">
+                    <li class="text-center">
+                        <a href="#home" class="nav-link"><i class='bx bx-home nav-icon'></i>Home</a>
+                    </li>
+                    <li class="text-center">
+                        <a href="#profile" class="nav-link"><i class='bx bx-user nav-icon'></i>Profile</a>
+                    </li>
+                    <li class="text-center">
+                        <a href="#education" class="nav-link"><i class='bx bx-book nav-icon'></i>Education</a>
+                    </li>
+                    <li class="text-center">
+                        <a href="#skills" class="nav-link"><i class='bx bx-receipt nav-icon'></i>Skills</a>
+                    </li>
+                    <li class="text-center">
+                        <a href="#eksperience" class="nav-link"><i class='bx bx-briefcase nav-icon'></i>Eksperience</a>
+                    </li>
+                    <li class="text-center">
+                        <a href="#certificates" class="nav-link"><i class='bx bx-award nav-icon'></i>Certificates</a>
+                    </li>
+                    <li class="text-center">
+                        <a href="#references" class="nav-link"><i class='bx bx-link-external nav-icon'></i>References</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-toggle cursor-pointer" id="nav-toggle">
+                <i class='bx bx-grid-alt nav-icon'></i>
+            </div>
+        </nav>
     </header>
     <main class="l-main bd-container">
         <!-- All elements within this div, is generated in PDF -->
         <div class="resume" id="area-cv">
             <div class="resume__left">
                 <!--========== HOME ==========-->
-                <section class="home" id="home">
-                    
+                <section class="relative" id="home">
+                    <div class="gap-12 section bd-grid">
+                        <div class="gap-2 text-center bd-grid">
+                            <img src="assets/img/profil1.jpg" alt="" class="w-[120px] h-[120px] rounded-full justify-self-center mb-1">
+                            <h1 class="text-2xl">Wildan <b>Aminudin</b></h1>
+                            <h3 class="text-normal-font mb-1">Frontend Developer</h3>
+                            <!-- Button to generate and download the pdf. Available for desktop. -->
+                            <div>
+                                <a href="assets/pdf/ResumeCv.pdf" download="" class="inline-block border-2 border-solid border-title-color text-title-color py-4 px-8 mt-1.5 rounded duration-300 font-medium hover:bg-color-text hover:text-container-color">Download</a>
+                            </div>
+                        </div>
+                        <div class="bd-grid gap-4">
+                            <span class="home-information">
+                                <i class="bx bx-map home-icon"></i> Bumiayu, Brebes - Jawa Tengah
+                            </span>
+                            <span class="home-information">
+                                <i class="bx bx-envelope home-icon"></i> mail@email.com
+                            </span>
+                            <span class="home-information">
+                                <i class="bx bx-phone home-icon"></i> +62-8123-4567-890
+                            </span>
+                        </div>
+                    </div>
                     <!-- Theme change button -->
-                    
-
-                    <!-- Button to generate and download the pdf. Available for desktop. -->
 
                 </section>          
                 
                 <!--========== SOCIAL ==========-->
                 <section class="social section">
-                    
+                    <h2 class="section-title">Social</h2>
+                    <div class="bd-grid grid-cols-3 gap-4">
+                        <a href="#" target="_blank" class="social-link">
+                            <i class='bx bxl-linkedin-square social-icon' ></i>@wildan
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <i class='bx bxl-github social-icon' ></i>@wildan
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <i class='bx bxl-instagram-alt social-icon' ></i>@wildan
+                        </a>
+                    </div>
                 </section>
 
                 <!--========== PROFILE ==========-->
@@ -79,5 +140,7 @@
             </div>
         </div>        
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

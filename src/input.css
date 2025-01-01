@@ -5,7 +5,7 @@
 @layer base {
     *,::after,::before {
         box-sizing: border-box;
-        border: 1px solid red;
+        border: 1px solid #ededed;
     }
     
     html {
@@ -48,9 +48,9 @@
     }
     
     .section-title {
-        font-size: theme(fontSize.h2);
+        font-size: 1.25rem;
         color: theme(colors.title-color);
-        font-weight: theme(fontWeight.semi-bold);
+        font-weight: 600;
         text-transform: uppercase;
         letter-spacing: .35rem;
         text-align: center;
@@ -58,3 +58,91 @@
     }
 }
 
+@layer components {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: theme(height.header-height);
+    }
+
+    .nav-logo,
+    .nav-toggle {
+        color: theme(colors.title-color);
+        font-weight: theme(fontWeight.medium);
+    }
+
+    .nav-icon {
+        font-size: 1.2rem;
+        margin-bottom: theme(margin[0.5]);
+    }
+}
+
+.bd-container {
+    max-width: 968px;
+    width: calc(100% - 3rem);
+    margin-left: theme(margin[1.5]);
+    margin-right: theme(margin[1.5]);
+}
+
+.bd-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    font-size: theme(fontSize.smaller-font);
+    color: theme(colors.color-light);
+    font-weight: 600;
+}
+.nav-link:hover {
+    color: theme(colors.title-color);
+}
+
+.home-information {
+    display: flex;
+    align-items: center;
+    font-size: theme(fontSize.small-font);
+}
+
+.home-icon {
+    font-size: 1.2rem;
+    margin-right: .25rem;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: theme(fontSize.small-font);
+    color: theme(colors.color-text);
+}
+.social-link:hover {
+    color: theme(colors.title-color);
+}
+
+.social-link {
+    font-size: 1.2rem;
+    margin-right: .25rem;
+}
+
+
+@media (max-width: 968px) {
+    .nav-menu {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        padding: 2rem 1.5rem;
+        background-color: theme(colors.body-color);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+        border-radius: 1rem 1rem 0 0;
+        z-index: theme(zIndex.fixed);
+        transition: .3s;
+    }
+
+    .show-menu {
+        bottom: 3rem;
+    }
+}
