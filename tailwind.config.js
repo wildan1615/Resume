@@ -11,8 +11,10 @@ module.exports = {
       'body-color': '#FCFCFC'
     },
     fontSize: {
+      'text-xs': '.75rem',
+      'text-sm': '.875rem',
+      'text-base': '1rem',
       'normal-font': '.938rem',
-      'small-font': '.875rem',
       'smaller-font': '.813rem'
     },
     fontFamily: {
