@@ -658,6 +658,10 @@ img {
   display: inline-block;
 }
 
+.flex {
+  display: flex;
+}
+
 .grid {
   display: grid;
 }
@@ -678,16 +682,8 @@ img {
   cursor: pointer;
 }
 
-.grid-cols-12 {
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-}
-
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-subgrid {
-  grid-template-columns: subgrid;
 }
 
 .gap-12 {
@@ -752,6 +748,14 @@ img {
 
 .text-normal-font {
   font-size: .938rem;
+}
+
+.text-small-font {
+  font-size: .875rem;
+}
+
+.text-smaller-font {
+  font-size: .813rem;
 }
 
 .font-medium {
