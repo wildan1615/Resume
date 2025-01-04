@@ -113,7 +113,7 @@
 .home-information {
     display: flex;
     align-items: center;
-    font-size: theme(fontSize.small-font);
+    font-size: theme(fontSize.text-sm);
 }
 
 .home-icon {
@@ -124,7 +124,7 @@
 .social-link {
     display: inline-flex;
     align-items: center;
-    font-size: theme(fontSize.small-font);
+    font-size: theme(fontSize.text-sm);
     color: theme(colors.color-text);
 }
 .social-link:hover {

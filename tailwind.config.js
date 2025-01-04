@@ -29,9 +29,6 @@ module.exports = {
       'tooltip': '10',
       'fixed': '100'
     },
-    screens: {
-      'tablet': '640',
-    },
     extend: {
       height: {
         'header-height': '3rem'
