@@ -626,6 +626,15 @@ img {
   margin-bottom: .5rem;
 }
 
+.skill-circle {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #403A3A;
+  margin-right: .75rem;
+}
+
 .fixed {
   position: fixed;
 }
@@ -648,6 +657,10 @@ img {
 
 .mb-1 {
   margin-bottom: 1rem;
+}
+
+.mb-1\.5 {
+  margin-bottom: 1.5rem;
 }
 
 .mt-1\.5 {
@@ -682,8 +695,20 @@ img {
   cursor: pointer;
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-0 {
+  gap: 0px;
 }
 
 .gap-12 {
