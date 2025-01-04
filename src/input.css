@@ -76,6 +76,15 @@
         font-size: 1.2rem;
         margin-bottom: theme(margin[0.5]);
     }
+
+    .skill-circle {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: theme(colors.color-text);
+        margin-right: .75rem;
+    }
 }
 
 .bd-container {
