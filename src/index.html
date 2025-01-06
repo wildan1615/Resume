@@ -37,7 +37,7 @@
                         <a href="#certificates" class="nav-link"><i class='bx bx-award nav-icon'></i>Certificates</a>
                     </li>
                     <li class="text-center">
-                        <a href="#references" class="nav-link"><i class='bx bx-link-external nav-icon'></i>References</a>
+                        <a href="#languages" class="nav-link"><i class='bx bx-link-external nav-icon'></i>Languages</a>
                     </li>
                 </ul>
             </div>
@@ -53,13 +53,13 @@
                 <!--========== HOME ==========-->
                 <section class="relative" id="home">
                     <div class="gap-12 section bd-grid">
-                        <div class="gap-2 text-center bd-grid">
+                        <div class="gap-2 text-center bd-grid md:gap-1">
                             <img src="assets/img/profil1.jpg" alt="" class="w-[120px] h-[120px] rounded-full justify-self-center mb-1">
                             <h1 class="text-2xl">Wildan <b>Aminudin</b></h1>
-                            <h3 class="text-normal-font mb-1">Frontend Developer</h3>
+                            <h3 class="text-normal-font mb-1 md:mb-[20px]">Frontend Developer</h3>
                             <!-- Button to generate and download the pdf. Available for desktop. -->
                             <div>
-                                <a href="assets/pdf/ResumeCv.pdf" download="" class="inline-block border-2 border-solid border-title-color text-title-color py-4 px-8 mt-1.5 rounded duration-300 font-medium hover:bg-color-text hover:text-container-color">Download</a>
+                                <a href="assets/pdf/ResumeCv.pdf" download="" class="inline-block border-2 border-solid border-title-color text-title-color py-4 px-8 mt-1.5 rounded duration-300 font-medium hover:bg-color-text hover:text-container-color md:hidden">Download</a>
                             </div>
                         </div>
                         <div class="bd-grid gap-4">
@@ -81,7 +81,7 @@
                 <!--========== SOCIAL ==========-->
                 <section class="social section">
                     <h2 class="section-title">Social</h2>
-                    <div class="bd-grid grid-cols-3 gap-4">
+                    <div class="bd-grid grid-cols-3 md:grid-cols-1 gap-4">
                         <a href="#" target="_blank" class="social-link">
                             <i class='bx bxl-linkedin-square social-icon' ></i>@wildan
                         </a>
@@ -143,7 +143,6 @@
                         </ul>
                     </div>
                 </section>
-
             </div>
 
             <div class="resume__right">
@@ -200,26 +199,45 @@
 
                 <!--========== CERTIFICATES ==========-->
                 <section class="certificate section" id="certificates">
-                    
-                </section>
-
-                <!--========== REFERENCES ==========-->
-                <section class="references section" id="references">
-                    
+                    <h2 class="section-title">Certificates</h2>
+                    <div class="certificate-container bd-grid">
+                        <div class="certificate-content">
+                            <h3 class="text-text-base mb-1">Certified for compliance in the work area (2012)</h3>
+                            <p class="certificate-description">For meeting the expectations of leading the team to work the specified tasks in the labor field.</p>
+                        </div>
+                        <div class="certificate-content">
+                            <h3 class="text-text-base mb-1">Certificate of attendance on computer technology.</h3>
+                            <p class="certificate-description">For meeting the expectations of leading the team to work the specified tasks in the labor field.</p>
+                        </div>
+                        <div class="certificate-content">
+                            <h3 class="text-text-base mb-1">Achievement medal for productivity excellence during the year (2019)</h3>
+                            <p class="certificate-description">For meeting the expectations of leading the team to work the specified tasks in the labor field.</p>
+                        </div>
+                    </div>
                 </section>
 
                 <!--========== LANGUAGES ==========-->
-                <section class="languages section">
-                    
-                </section>
-                
-                <!--========== INTERESTS ==========-->
-                <section class="interests section">
-                    
+                <section class="languages section" id="languages">
+                    <h2 class="section-title">Languages</h2>
+                    <div class="language-container">
+                        <ul class="language-content bd-grid">
+                            <li class="language-name">
+                                <span class="language-circle"></span> English
+                            </li>
+                            <li class="language-name">
+                                <span class="language-circle"></span> Bahasa Indonesia
+                            </li>
+                        </ul>
+                    </div>
                 </section>
             </div>
         </div>        
     </main>
+
+    <!-- scroll top -->
+    <a href="#" class="fixed right-4 bottom-[-20%] flex justify-center items-center p-[.3rem] bg-container-color-alt rounded-lg z-tooltip duration-[.4s] invisible" id="scroll-top">
+        <i class='bx bx-chevron-up text-[1.2rem] text-color-text'></i>
+    </a>
 
     <script src="script.js"></script>
 </body>

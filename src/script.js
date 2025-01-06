@@ -26,7 +26,16 @@ menuLink.forEach(link => link.addEventListener('click', actionLink))
 
 
 /*==================== SHOW SCROLL TOP ====================*/ 
-
+function scrollTop() {
+    const scroll = document.getElementById('scroll-top')
+    // ketika scroll lebih tinggi dari viewport 560, tambahkan kelas show-scroll
+    if (scrollY >= 560) {
+        scroll.classList.add('show-scroll');
+    } else {
+        scroll.classList.remove('show-scroll');
+    }
+}
+window.addEventListener('scroll', scrollTop)
 
 /*==================== DARK LIGHT THEME ====================*/ 
 
