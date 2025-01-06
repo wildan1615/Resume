@@ -1008,10 +1008,6 @@ img {
     margin-bottom: 20px;
   }
 
-  .md\:mb-0\.5 {
-    margin-bottom: .5rem;
-  }
-
   .md\:hidden {
     display: none;
   }
