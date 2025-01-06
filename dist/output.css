@@ -626,7 +626,8 @@ img {
   margin-bottom: .5rem;
 }
 
-.skill-circle {
+.skill-circle,
+    .language-circle {
   display: inline-block;
   width: 5px;
   height: 5px;
@@ -653,6 +654,10 @@ img {
   transform: translate(7px, 0);
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .fixed {
   position: fixed;
 }
@@ -665,12 +670,24 @@ img {
   bottom: 0px;
 }
 
+.bottom-\[-20\%\] {
+  bottom: -20%;
+}
+
 .left-0 {
   left: 0px;
 }
 
+.right-4 {
+  right: 1rem;
+}
+
 .z-fixed {
   z-index: 100;
+}
+
+.z-tooltip {
+  z-index: 10;
 }
 
 .mb-1 {
@@ -725,6 +742,10 @@ img {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .gap-0 {
   gap: 0px;
 }
@@ -757,6 +778,10 @@ img {
   border-radius: 9999px;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -773,6 +798,15 @@ img {
 .bg-body-color {
   --tw-bg-opacity: 1;
   background-color: rgb(252 252 252 / var(--tw-bg-opacity, 1));
+}
+
+.bg-container-color-alt {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 239 239 / var(--tw-bg-opacity, 1));
+}
+
+.p-\[\.3rem\] {
+  padding: .3rem;
 }
 
 .px-4 {
@@ -794,6 +828,10 @@ img {
   text-align: center;
 }
 
+.text-\[1\.2rem\] {
+  font-size: 1.2rem;
+}
+
 .text-normal-font {
   font-size: .938rem;
 }
@@ -802,8 +840,17 @@ img {
   font-size: .813rem;
 }
 
+.text-text-base {
+  font-size: 1rem;
+}
+
 .font-medium {
   font-weight: 500;
+}
+
+.text-color-text {
+  --tw-text-opacity: 1;
+  color: rgb(64 58 58 / var(--tw-text-opacity, 1));
 }
 
 .text-title-color {
@@ -820,6 +867,10 @@ img {
   transition-duration: 300ms;
 }
 
+.duration-\[\.4s\] {
+  transition-duration: .4s;
+}
+
 .bd-container {
   max-width: 968px;
   width: calc(100% - 3rem);
@@ -831,6 +882,8 @@ img {
   display: grid;
   gap: 1.5rem;
 }
+
+/* navigation section */
 
 .nav-link {
   display: flex;
@@ -844,6 +897,8 @@ img {
   color: #0B0A0A;
 }
 
+/* home section */
+
 .home-information {
   display: flex;
   align-items: center;
@@ -854,6 +909,8 @@ img {
   font-size: 1.2rem;
   margin-right: .25rem;
 }
+
+/* social section */
 
 .social-link {
   display: inline-flex;
@@ -870,6 +927,15 @@ img {
   font-size: 1.2rem;
   margin-right: .25rem;
 }
+
+/* show scroll */
+
+.show-scroll {
+  visibility: visible;
+  bottom: 5rem;
+}
+
+/* media responsive */
 
 @media (max-width: 968px) {
   .nav-menu {
