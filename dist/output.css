@@ -992,7 +992,7 @@ img {
     display: grid;
     grid-template-columns: .5fr 1fr;
     background-color: #FAFAFA;
-    box-shadow: 0 0 8px rgba(13, 12, 12, .15);
+    box-shadow: 0 0 8px rgb(255, 255, 255);
   }
 
   .resume__left {
@@ -1060,5 +1060,12 @@ img {
 
   .md\:gap-1 {
     gap: 0.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:dark\:bg-slate-500:is(.dark *) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(100 116 139 / var(--tw-bg-opacity, 1));
   }
 }
