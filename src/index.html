@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,38 +11,38 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
     <title>Resume CV</title>
 </head>
-<body>
+<body class="dark:bg-slate-800 dark:text-white">
     <!--========== HEADER ==========-->
-    <header class="w-full fixed bottom-0 left-0 z-fixed bg-body-color shadow-title-color duration-300" id="header">
+    <header class="w-full fixed bottom-0 left-0 z-fixed bg-body-color dark:bg-slate-800 shadow-title-color duration-300" id="header">
         <nav class="nav bd-container">
-            <a href="#" class="nav-logo">Wildan</a>
-            <div class="nav-menu" id="nav-menu">
+            <a href="#" class="nav-logo dark:text-white">Wildan</a>
+            <div class="nav-menu dark:bg-slate-800" id="nav-menu">
                 <ul class="grid grid-cols-3 gap-8">
-                    <li class="text-center">
-                        <a href="#home" class="nav-link"><i class='bx bx-home nav-icon'></i>Home</a>
+                    <li class="text-center ">
+                        <a href="#home" class="nav-link dark:text-white"><i class='bx bx-home nav-icon'></i>Home</a>
                     </li>
                     <li class="text-center">
-                        <a href="#profile" class="nav-link"><i class='bx bx-user nav-icon'></i>Profile</a>
+                        <a href="#profile" class="nav-link dark:text-white"><i class='bx bx-user nav-icon'></i>Profile</a>
                     </li>
                     <li class="text-center">
-                        <a href="#education" class="nav-link"><i class='bx bx-book nav-icon'></i>Education</a>
+                        <a href="#education" class="nav-link dark:text-white"><i class='bx bx-book nav-icon'></i>Education</a>
                     </li>
                     <li class="text-center">
-                        <a href="#skills" class="nav-link"><i class='bx bx-receipt nav-icon'></i>Skills</a>
+                        <a href="#skills" class="nav-link dark:text-white"><i class='bx bx-receipt nav-icon'></i>Skills</a>
                     </li>
                     <li class="text-center">
-                        <a href="#eksperience" class="nav-link"><i class='bx bx-briefcase nav-icon'></i>Eksperience</a>
+                        <a href="#eksperience" class="nav-link dark:text-white"><i class='bx bx-briefcase nav-icon'></i>Eksperience</a>
                     </li>
                     <li class="text-center">
-                        <a href="#certificates" class="nav-link"><i class='bx bx-award nav-icon'></i>Certificates</a>
+                        <a href="#certificates" class="nav-link dark:text-white"><i class='bx bx-award nav-icon'></i>Certificates</a>
                     </li>
                     <li class="text-center">
-                        <a href="#languages" class="nav-link"><i class='bx bx-link-external nav-icon'></i>Languages</a>
+                        <a href="#languages" class="nav-link dark:text-white"><i class='bx bx-link-external nav-icon'></i>Languages</a>
                     </li>
                 </ul>
             </div>
             <div class="nav-toggle cursor-pointer" id="nav-toggle">
-                <i class='bx bx-grid-alt nav-icon'></i>
+                <i class='bx bx-grid-alt nav-icon dark:bg-white'></i>
             </div>
         </nav>
     </header>
@@ -55,11 +55,11 @@
                     <div class="gap-12 section bd-grid">
                         <div class="gap-2 text-center bd-grid md:gap-1">
                             <img src="assets/img/profil1.jpg" alt="" class="w-[120px] h-[120px] rounded-full justify-self-center mb-1">
-                            <h1 class="text-2xl">Wildan <b>Aminudin</b></h1>
-                            <h3 class="text-normal-font mb-1 md:mb-[20px]">Frontend Developer</h3>
+                            <h1 class="text-2xl dark:text-white">Wildan <b>Aminudin</b></h1>
+                            <h3 class="text-normal-font mb-1 md:mb-[20px] dark:text-white">Frontend Developer</h3>
                             <!-- Button to generate and download the pdf. Available for desktop. -->
                             <div>
-                                <a href="assets/pdf/ResumeCv.pdf" download="" class="inline-block border-2 border-solid border-title-color text-title-color py-4 px-8 mt-1.5 rounded duration-300 font-medium hover:bg-color-text hover:text-container-color md:hidden">Download</a>
+                                <a href="assets/pdf/ResumeCv.pdf" download="" class="inline-block border-2 border-solid border-title-color text-title-color py-4 px-8 mt-1.5 rounded duration-300 font-medium hover:bg-color-text hover:text-white  md:hidden dark:text-white dark:border-white">Download</a>
                             </div>
                         </div>
                         <div class="bd-grid gap-4">
@@ -75,20 +75,20 @@
                         </div>
                     </div>
                     <!-- Theme change button -->
-                    <i class='bx bx-moon change-theme absolute top-[2.2rem] right-0 cursor-pointer flex text-[1.2rem] text-color-text hover:text-title-color' id="theme-btn" title="Theme"></i>
+                    <i class='bx bx-moon change-theme absolute top-[2.2rem] right-0 cursor-pointer flex text-[1.2rem] text-color-text hover:text-title-color dark:text-white' id="theme-btn" title="Theme"></i>
                 </section>          
 
                 <!--========== SOCIAL ==========-->
                 <section class="social section">
-                    <h2 class="section-title">Social</h2>
+                    <h2 class="section-title dark:text-white">Social</h2>
                     <div class="bd-grid grid-cols-3 md:grid-cols-1 gap-4">
-                        <a href="#" target="_blank" class="social-link">
+                        <a href="#" target="_blank" class="social-link dark:text-white">
                             <i class='bx bxl-linkedin-square social-icon' ></i>@wildan
                         </a>
-                        <a href="#" target="_blank" class="social-link">
+                        <a href="#" target="_blank" class="social-link dark:text-white">
                             <i class='bx bxl-github social-icon' ></i>@wildan
                         </a>
-                        <a href="#" target="_blank" class="social-link">
+                        <a href="#" target="_blank" class="social-link dark:text-white">
                             <i class='bx bxl-instagram-alt social-icon' ></i>@wildan
                         </a>
                     </div>
@@ -96,18 +96,18 @@
 
                 <!--========== PROFILE ==========-->
                 <section class="profile section" id="profile">
-                    <h2 class="section-title">Profile</h2>
+                    <h2 class="section-title dark:text-white">Profile</h2>
                     <p class="text-center">I am a person, responsible with their work during working hours. Finish various technical and higher studies at large universities. I have several years of experience and achievements in the labor field.</p>
                 </section>
 
                 <!--========== EDUCATION ==========-->
                 <section class="education section" id="education">
-                    <h2 class="section-title">Education</h2>
+                    <h2 class="section-title dark:text-white">Education</h2>
                     <div class="education-container bd-grid">
                         <div class="flex">
                             <div class="gap-2 bd-grid">
-                                <h3 class="text-2xl">SISTEM INFORMASI</h3>
-                                <span class="text-small-font text-title-color">STMIK Muhammadiyah Paguyangan Brebes</span>
+                                <h3 class="text-2xl dark:text-white">SISTEM INFORMASI</h3>
+                                <span class="text-small-font text-title-color dark:text-white">STMIK Muhammadiyah Paguyangan Brebes</span>
                                 <span class="text-smaller-font">2017 - 2022</span>
                             </div>
                         </div>
@@ -116,28 +116,28 @@
 
                 <!--========== SKILLS  ==========-->
                 <section class="skills section" id="skills">
-                    <h2 class="section-title">Skills</h2>
+                    <h2 class="section-title dark:text-white">Skills</h2>
                     <div class="grid-cols-2 gap-0 bd-grid">
                         <ul class="skill-data">
                             <li class="flex items-center mb-1.5">
-                                <span class="skill-circle"></span> Html
+                                <span class="skill-circle dark:bg-white"></span> Html
                             </li>
                             <li class="flex items-center mb-1.5">
-                                <span class="skill-circle"></span> CSS
+                                <span class="skill-circle dark:bg-white"></span> CSS
                             </li>
                             <li class="flex items-center mb-1.5">
-                                <span class="skill-circle"></span> Javascript
+                                <span class="skill-circle dark:bg-white"></span> Javascript
                             </li>
                         </ul>
                         <ul class="skill-data">
                             <li class="flex items-center mb-1.5">
-                                <span class="skill-circle"></span> Angular
+                                <span class="skill-circle dark:bg-white"></span> Angular
                             </li>
                             <li class="flex items-center mb-1.5">
-                                <span class="skill-circle"></span> Firebase
+                                <span class="skill-circle dark:bg-white"></span> Firebase
                             </li>
                             <li class="flex items-center mb-1.5">
-                                <span class="skill-circle"></span> React
+                                <span class="skill-circle dark:bg-white"></span> React
                             </li>
                         </ul>
                     </div>
@@ -147,15 +147,15 @@
             <div class="resume__right">
                 <!--========== EXPERIENCE ==========-->
                 <section class="experience section" id="experience">
-                    <div class="section-title">Experience</div>
+                    <div class="section-title dark:text-white">Experience</div>
                     <div class="experience-container bd-grid">
                         <div class="flex">
                             <div class="px-4">
-                                <span class="experience-rounded"></span>
-                                <span class="experience-line"></span>
+                                <span class="experience-rounded dark:bg-white"></span>
+                                <span class="experience-line dark:bg-white"></span>
                             </div>
                             <div class="experience-data bd-grid">
-                                <h3 class="experience-title">Master of Design</h3>
+                                <h3 class="experience-title dark:text-white">Master of Design</h3>
                                 <span class="experience-company">
                                     From 2013 to 2015 | Tech soft
                                 </span>
@@ -166,11 +166,11 @@
                         </div>
                         <div class="flex">
                             <div class="px-4">
-                                <span class="experience-rounded"></span>
-                                <span class="experience-line"></span>
+                                <span class="experience-rounded dark:bg-white"></span>
+                                <span class="experience-line dark:bg-white"></span>
                             </div>
                             <div class="experience-data bd-grid">
-                                <h3 class="experience-title">UI UX Design Area</h3>
+                                <h3 class="experience-title dark:text-white">UI UX Design Area</h3>
                                 <span class="experience-company">
                                     From 2016 to 2018 | Adobe Inc
                                 </span>
@@ -181,10 +181,10 @@
                         </div>
                         <div class="flex">
                             <div class="px-4">
-                                <span class="experience-rounded"></span>
+                                <span class="experience-rounded dark:bg-white"></span>
                             </div>
                             <div class="experience-data bd-grid">
-                                <h3 class="experience-title">Master of Design</h3>
+                                <h3 class="experience-title dark:text-white">Master of Design</h3>
                                 <span class="experience-company">
                                     From 2018 to 2021 | App Tech
                                 </span>
@@ -198,18 +198,18 @@
 
                 <!--========== CERTIFICATES ==========-->
                 <section class="certificate section" id="certificates">
-                    <h2 class="section-title">Certificates</h2>
+                    <h2 class="section-title dark:text-white">Certificates</h2>
                     <div class="certificate-container bd-grid">
                         <div class="certificate-content">
-                            <h3 class="text-text-base mb-1">Certified for compliance in the work area (2012)</h3>
+                            <h3 class="text-text-base mb-1 dark:text-white">Certified for compliance in the work area (2012)</h3>
                             <p class="certificate-description">For meeting the expectations of leading the team to work the specified tasks in the labor field.</p>
                         </div>
                         <div class="certificate-content">
-                            <h3 class="text-text-base mb-1">Certificate of attendance on computer technology.</h3>
+                            <h3 class="text-text-base mb-1 dark:text-white">Certificate of attendance on computer technology.</h3>
                             <p class="certificate-description">For meeting the expectations of leading the team to work the specified tasks in the labor field.</p>
                         </div>
                         <div class="certificate-content">
-                            <h3 class="text-text-base mb-1">Achievement medal for productivity excellence during the year (2019)</h3>
+                            <h3 class="text-text-base mb-1 dark:text-white">Achievement medal for productivity excellence during the year (2019)</h3>
                             <p class="certificate-description">For meeting the expectations of leading the team to work the specified tasks in the labor field.</p>
                         </div>
                     </div>
@@ -217,14 +217,14 @@
 
                 <!--========== LANGUAGES ==========-->
                 <section class="languages section" id="languages">
-                    <h2 class="section-title">Languages</h2>
+                    <h2 class="section-title dark:text-white">Languages</h2>
                     <div class="language-container">
                         <ul class="language-content bd-grid">
                             <li class="language-name">
-                                <span class="language-circle"></span> English
+                                <span class="language-circle dark:bg-white"></span> English
                             </li>
                             <li class="language-name">
-                                <span class="language-circle"></span> Bahasa Indonesia
+                                <span class="language-circle dark:bg-white"></span> Bahasa Indonesia
                             </li>
                         </ul>
                     </div>
