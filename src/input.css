@@ -203,7 +203,7 @@
         display: grid;
         grid-template-columns: .5fr 1fr;
         background-color: theme(colors.container-color);
-        box-shadow: 0 0 8px rgba(13, 12, 12, .15);
+        box-shadow: 0 0 8px rgb(255, 255, 255);
     }
 
     .resume__left {
